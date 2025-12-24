@@ -1,0 +1,3 @@
+[submodule "primeros-ejercicios"]
+	path = primeros-ejercicios
+	url = https://github.com/Yna25/primeros-ejercicios.git
