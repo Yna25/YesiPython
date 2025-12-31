@@ -4,11 +4,10 @@
 #Operacion que rciba 2 numeros y la operacion que va a realizar
 
 def calculadora (x, y, op):
-    print("Bienvenido a la calculadora de Yesi")    
+  
     try:
         num1= float(x)
         num2= float(y)
-        
         if op == "+":
             return num1 + num2
         elif op == "-":
@@ -26,9 +25,11 @@ def calculadora (x, y, op):
     except ValueError:
         return "Error: Entrada no válida. Por favor ingresa números."
 
+print("Bienvenido a la calculadora de Yesi")  
 x= input ("Ingresa el primer numero ")
-y= input ("Ingresa el segundo numero ")
 op= input("Ingresa la operación a realizar (suma (+), resta (-), multiplicación (*), división (/), exponenciación (**)) ")
+y= input ("Ingresa el segundo numero ")
 
-resultado= calculadora (x, y, op)
+
+resultado= calculadora(x, y, op)
 print("El resultado es: ", resultado)
